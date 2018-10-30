@@ -1,3 +1,6 @@
-
+header {
+  background: url("../img/headback.png") center center;
+  background-size: cover;
+  height: 100vh; }
 
 /*# sourceMappingURL=main.css.map */
