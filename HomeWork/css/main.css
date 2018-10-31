@@ -1,6 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Raleway:400,500,600,700,800|Roboto");
 header {
   background: url("../img/headback.png") center center;
   background-size: cover;
   height: 100vh; }
+  header .logo-menu-wrap {
+    padding-top: 40px;
+    justify-content: space-between;
+    align-items: center; }
+    header .logo-menu-wrap .logo-wrap {
+      display: flex;
+      align-content: center; }
+      header .logo-menu-wrap .logo-wrap:hover {
+        text-decoration: none; }
+      header .logo-menu-wrap .logo-wrap span {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 34px;
+        color: #fff;
+        letter-spacing: -1.4px; }
+    header .logo-menu-wrap .menu-wrap-top {
+      display: flex; }
+      header .logo-menu-wrap .menu-wrap-top .nav-top {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: #fff;
+        text-transform: capitalize;
+        padding-right: 30px; }
+        header .logo-menu-wrap .menu-wrap-top .nav-top:last-child {
+          padding-right: 0; }
+        header .logo-menu-wrap .menu-wrap-top .nav-top:hover {
+          text-decoration: none;
+          color: #c7b299; }
+      header .logo-menu-wrap .menu-wrap-top .ico-wrap-top {
+        margin-left: 50px;
+        text-decoration: none; }
+        header .logo-menu-wrap .menu-wrap-top .ico-wrap-top span {
+          color: #fff; }
+          header .logo-menu-wrap .menu-wrap-top .ico-wrap-top span:first-child {
+            padding-right: 15px; }
+          header .logo-menu-wrap .menu-wrap-top .ico-wrap-top span:hover {
+            text-decoration: none;
+            color: #c7b299; }
 
 /*# sourceMappingURL=main.css.map */

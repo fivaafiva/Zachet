@@ -1,5 +1,47 @@
+@import "variables.scss";
+
 header {
   background: url("../img/headback.png") center center;
   background-size: cover;
   height: 100vh;
+  .logo-menu-wrap {
+    padding-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    .logo-wrap {
+      display: flex;
+      align-content: center;
+      &:hover {
+        text-decoration: none;
+      }
+      span {
+        @include font-raleway(400, 34px, $light-color);
+        letter-spacing: -1.4px;
+      }
+    }
+    .menu-wrap-top {
+      display: flex;
+      .nav-top {
+        @include font-montserrat(300, 14px, $light-color);
+        text-transform: capitalize;
+        padding-right: 30px;
+        &:last-child {
+          padding-right: 0;
+        }
+        @include hover();
+      }
+      .ico-wrap-top {
+        margin-left: 50px;
+        text-decoration: none;
+        span{
+          color: $light-color;
+          &:first-child {
+            padding-right: 15px;
+          }
+          @include hover();
+        }
+      }
+    }
+  }
 }
+
