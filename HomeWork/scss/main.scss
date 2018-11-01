@@ -1,5 +1,4 @@
 @import "variables.scss";
-
 header {
   background: url("../img/headback.png") center center;
   background-size: cover;
@@ -44,4 +43,168 @@ header {
     }
   }
 }
-
+#brands {
+  background: url("../img/mountain.jpg") center center;
+  background-size: cover;
+  .brands-wrap {
+    padding: 180px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+#pluses {
+  min-height: 373px;
+}
+footer {
+  .main-footer {
+    background: $main-foot-color;
+    padding: 80px 0;
+    .main-footer-wrap {
+      @include font-montserrat(300, 14px, $light-foot-color);
+      .footer-title {
+        @include font-raleway (400, 24px, $light-color);
+        text-transform: capitalize;
+        margin-bottom: 30px;
+      }
+      .footer-about-company {
+        display: flex;
+        flex-flow: wrap column;
+        .logo-footer-wrap {
+          display: flex;
+          align-content: center;
+          margin-top: -20px;
+          margin-bottom: 30px;
+          &:hover {
+            text-decoration: none;
+          }
+          span {
+            @include font-raleway(400, 34px, $light-color);
+            letter-spacing: -1.4px;
+          }
+        }
+        p {
+          margin-bottom: 30px;
+          line-height: 1.71;
+        }
+        .footer-about-company-link {
+          text-transform: capitalize;
+          color: #d1d1d1;
+          @include hover();
+          display: block;
+          position: relative;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 89px;
+            border: 5px solid transparent;
+            border-left: 9px solid #d1d1d1;
+          }
+        }
+      }
+      .footer-recent-post {
+        display: flex;
+        flex-flow: wrap column;
+        .footer-recent-post-wrap {
+          display: flex;
+          flex-flow: column;
+          cursor: pointer;
+          &:hover {
+            .footer-recent-post-date {
+              transition: 1s;
+              color: $light-color;
+            }
+            p {
+              transition: 1s;
+              color: $beige-color;
+            }
+          }
+          &:nth-child(n+3) {
+            padding-top: 20px;
+            border-top: 2px solid #252525 ;
+          }
+          .footer-recent-post-date {
+            font-size: 12px;
+            color: #363636;
+            padding-bottom: 10px;
+          }
+        }
+      }
+      .footer-our-twitter {
+        display: flex;
+        flex-flow: column;
+        .footer-twitter-wrap {
+          display: flex;
+          flex-flow: column;
+          &:nth-child(n+3) {
+            padding-top: 20px;
+            border-top: 2px solid #252525 ;
+          }
+          .footer-twitter-post {
+            margin-bottom: 0;
+            a {
+              color: #00bff3;
+            }
+          }
+          .footer-twitter-post-time {
+            font-size: 12px;
+            color: #363636;
+            padding: 10px 0;
+          }
+        }
+      }
+      .footer-drible-widget {
+        display: flex;
+        flex-flow: wrap column;
+        .footer-widget-wrap {
+          display: flex;
+          flex-flow: wrap;
+          img {
+            width: 50%;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+  .under-footer {
+    background: $under-foot-color;
+    padding: 45px 0;
+    @include font-montserrat(300, 13px, $light-foot-color);
+    .under-footer-wrap {
+      justify-content: space-between;
+      .under-footer-left-side {
+        display: flex;
+        P {
+          padding-right: 5px;
+          margin: 0;
+          border-right: 1px solid $light-foot-color;
+          span {
+            color: #959595;
+          }
+        }
+        a{
+          padding: 0 5px;
+          color: $light-foot-color;
+          @include hover();
+          &:not(:last-child) {
+            border-right: 1px solid $light-foot-color;
+          }
+        }
+      }
+      .under-footer-right-side {
+        display: flex;
+        p{
+          margin: 0;
+          &:not(:last-child) {
+            padding-right: 10px;
+          }
+          a{
+            color: #959595;
+            @include hover();
+          }
+        }
+      }
+    }
+  }
+}
