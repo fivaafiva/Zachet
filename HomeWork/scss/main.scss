@@ -1,6 +1,6 @@
 @import "variables.scss";
 header {
-  background: url("../img/headback.png") center center;
+  background: #3e403f url("../img/headback.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
   .logo-menu-wrap {
@@ -44,10 +44,10 @@ header {
   }
 }
 #brands {
-  background: url("../img/mountain.jpg") center center;
+  background: #3e403f url("../img/mountain.jpg") no-repeat center center;
   background-size: cover;
   .brands-wrap {
-    padding: 180px 0;
+    padding: 138px 0;
     justify-content: space-between;
     align-items: center;
   }

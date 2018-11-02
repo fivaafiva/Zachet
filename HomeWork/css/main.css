@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Raleway:400,500,600,700,800|Roboto");
 header {
-  background: url("../img/headback.png") center center;
+  background: #3e403f url("../img/headback.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh; }
   header .logo-menu-wrap {
@@ -44,10 +44,10 @@ header {
             color: #c7b299; }
 
 #brands {
-  background: url("../img/mountain.jpg") center center;
+  background: #3e403f url("../img/mountain.jpg") no-repeat center center;
   background-size: cover; }
   #brands .brands-wrap {
-    padding: 180px 0;
+    padding: 138px 0;
     justify-content: space-between;
     align-items: center; }
 
