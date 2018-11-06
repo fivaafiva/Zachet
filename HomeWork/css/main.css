@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Raleway:400,500,600,700,800|Roboto");
+.new-padding {
+  padding: 80px 0; }
+
 header {
   background: #3e403f url("../img/headback.jpg") no-repeat center center;
   background-size: cover;
@@ -13,6 +16,10 @@ header {
     header .logo-menu-wrap .logo-wrap {
       display: flex;
       align-content: center; }
+      header .logo-menu-wrap .logo-wrap:hover svg {
+        fill: #c7b299; }
+      header .logo-menu-wrap .logo-wrap svg {
+        fill: #fff; }
       header .logo-menu-wrap .logo-wrap:hover {
         text-decoration: none; }
       header .logo-menu-wrap .logo-wrap span {
@@ -54,12 +61,43 @@ header {
     justify-content: space-between;
     align-items: center; }
 
-#pluses {
-  min-height: 373px; }
+#pluses .pluses-wrap {
+  justify-content: space-around; }
+  #pluses .pluses-wrap .pluses-unit-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer; }
+    #pluses .pluses-wrap .pluses-unit-wrap:hover .pluses-unit-title {
+      color: #c7b299; }
+    #pluses .pluses-wrap .pluses-unit-wrap:hover .pluses-unit-ico {
+      fill: #c7b299; }
+    #pluses .pluses-wrap .pluses-unit-wrap:after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 3px;
+      background: #f1eee9; }
+    #pluses .pluses-wrap .pluses-unit-wrap:hover:after {
+      background: #c7b299; }
+    #pluses .pluses-wrap .pluses-unit-wrap .pluses-unit-ico {
+      fill: #555555;
+      margin-bottom: 20px; }
+    #pluses .pluses-wrap .pluses-unit-wrap .pluses-unit-title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      color: #555555;
+      margin-bottom: 18px; }
+    #pluses .pluses-wrap .pluses-unit-wrap .pluses-unit-desc {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: #8c8c8c; }
 
 footer .main-footer {
-  background: #191919;
-  padding: 80px 0; }
+  background: #191919; }
   footer .main-footer .main-footer-wrap {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -106,6 +144,8 @@ footer .main-footer {
           left: 89px;
           border: 5px solid transparent;
           border-left: 9px solid #d1d1d1; }
+        footer .main-footer .main-footer-wrap .footer-about-company .footer-about-company-link:hover:after {
+          border-left: 9px solid #c7b299; }
     footer .main-footer .main-footer-wrap .footer-recent-post {
       display: flex;
       flex-flow: wrap column; }

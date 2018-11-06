@@ -14,6 +14,12 @@ header {
     .logo-wrap {
       display: flex;
       align-content: center;
+      &:hover svg {
+        fill: $beige-color;
+      }
+      svg {
+        fill: $light-color;
+      }
       &:hover {
         text-decoration: none;
       }
@@ -57,12 +63,47 @@ header {
   }
 }
 #pluses {
-  min-height: 373px;
+  .pluses-wrap {
+    justify-content: space-around;
+    .pluses-unit-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      &:hover .pluses-unit-title {
+        color: $beige-color;
+      }
+      &:hover .pluses-unit-ico {
+        fill: $beige-color;
+      }
+      &:after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 3px;
+        background: #f1eee9;
+      }
+      &:hover:after {
+        background: $beige-color;
+      }
+      .pluses-unit-ico {
+        fill: $dark-color-title;
+        margin-bottom: 20px;
+      }
+      .pluses-unit-title {
+        @include font-raleway(600, 22px, $dark-color-title);
+        margin-bottom: 18px;
+      }
+      .pluses-unit-desc{
+        @include font-montserrat(300, 14px, $light-color-txt );
+      }
+    }
+  }
 }
 footer {
   .main-footer {
     background: $main-foot-color;
-    padding: 80px 0;
     .main-footer-wrap {
       @include font-montserrat(300, 14px, $light-foot-color);
       .footer-title {
@@ -103,6 +144,9 @@ footer {
             left: 89px;
             border: 5px solid transparent;
             border-left: 9px solid #d1d1d1;
+          }
+          &:hover:after {
+            border-left: 9px solid $beige-color;
           }
         }
       }
