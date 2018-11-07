@@ -17,6 +17,17 @@
   .wide-btn:focus {
     outline: none; }
 
+.narrow-btn {
+  padding: 4px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8c8c8c;
+  text-transform: capitalize;
+  background: transparent;
+  border-radius: 3px;
+  border: solid 1px #ebebeb; }
+
 .section-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -82,14 +93,6 @@ header {
           header .logo-menu-wrap .menu-wrap-top .ico-wrap-top span:hover {
             text-decoration: none;
             color: #c7b299; }
-
-#brands {
-  background: #3e403f url("../img/mountain.jpg") no-repeat center center;
-  background-size: cover; }
-  #brands .brands-wrap {
-    padding: 138px 0;
-    justify-content: space-between;
-    align-items: center; }
 
 #pluses .pluses-wrap {
   justify-content: space-around; }
@@ -173,6 +176,26 @@ header {
         font-weight: 400;
         font-size: 18px;
         color: #615855; }
+
+#our-project .our-project-wrap {
+  flex-direction: column;
+  align-items: center; }
+  #our-project .our-project-wrap .our-project-desc {
+    max-width: 780px;
+    text-align: center;
+    margin-bottom: 40px; }
+  #our-project .our-project-wrap .our-project-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 600px; }
+
+#brands {
+  background: #3e403f url("../img/mountain.jpg") no-repeat center center;
+  background-size: cover; }
+  #brands .brands-wrap {
+    padding: 138px 0;
+    justify-content: space-between;
+    align-items: center; }
 
 footer .main-footer {
   background: #191919; }

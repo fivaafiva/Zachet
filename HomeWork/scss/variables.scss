@@ -52,6 +52,14 @@ $under-foot-color: #111111;
     outline: none;
   }
 }
+.narrow-btn {
+  padding: 4px 20px;
+  @include font-montserrat(400, 14px, $light-color-txt);
+  text-transform: capitalize;
+  background: transparent;
+  border-radius: 3px;
+  border: solid 1px #ebebeb;
+}
 .section-title {
   @include font-raleway(600, 30px, $dark-color-title);
   margin-bottom: 24px;
