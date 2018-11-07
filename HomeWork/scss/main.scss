@@ -31,7 +31,7 @@ header {
     .menu-wrap-top {
       display: flex;
       .nav-top {
-        @include font-montserrat(300, 14px, $light-color);
+        @include font-montserrat(400, 14px, $light-color);
         text-transform: capitalize;
         padding-right: 30px;
         &:last-child {
@@ -96,16 +96,73 @@ header {
         margin-bottom: 18px;
       }
       .pluses-unit-desc{
-        @include font-montserrat(300, 14px, $light-color-txt );
+        @include font-montserrat(400, 14px, $light-color-txt );
       }
     }
   }
 }
+#ideas {
+  background: $gray-color;
+  padding-top: 80px;
+  .ideas-wrap {
+    flex-direction: column;
+    align-items: center;
+    .ideas-desc {
+      max-width: 780px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .ideas-img-wrap {
+      width:100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      img:nth-child(1) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      img:nth-child(2){
+        z-index: 10;
+      }
+      img:nth-child(3){
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+#buy-wp {
+  background: linear-gradient(to right, #211b19, #4e3427);
+  padding: 40px 0;
+  .buy-wp-wrap {
+    justify-content: space-between;
+    .buy-wp-left-side {
+      display: flex;
+      flex-direction: column;
+      .buy-wp-title {
+        @include font-raleway(400, 28px, $light-color);
+        text-transform: capitalize;
+        span {
+          color: $beige-color;
+        }
+      }
+      .buy-wp-desc {
+        @include font-montserrat(400, 18px, #615855)
+      }
+    }
+    .wide-btn {
+
+    }
+  }
+}
+
 footer {
   .main-footer {
     background: $main-foot-color;
     .main-footer-wrap {
-      @include font-montserrat(300, 14px, $light-foot-color);
+      @include font-montserrat(400, 14px, $light-foot-color);
       .footer-title {
         @include font-raleway (400, 24px, $light-color);
         text-transform: capitalize;
@@ -218,7 +275,7 @@ footer {
   .under-footer {
     background: $under-foot-color;
     padding: 45px 0;
-    @include font-montserrat(300, 13px, $light-foot-color);
+    @include font-montserrat(400, 13px, $light-foot-color);
     .under-footer-wrap {
       justify-content: space-between;
       .under-footer-left-side {
