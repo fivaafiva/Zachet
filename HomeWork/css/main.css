@@ -1,11 +1,50 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Raleway:400,500,600,700,800|Roboto");
+@font-face {
+  font-family: 'montserrat';
+  src: url("../fonts/montserrat/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat/montserrat-regular.woff") format("woff"), url("../fonts/montserrat/montserrat-regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserrat';
+  src: url("../fonts/montserrat/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat/montserrat-light.woff") format("woff"), url("../fonts/montserrat/montserrat-light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/raleway-extrabold.woff2") format("woff2"), url("../fonts/raleway/raleway-extrabold.woff") format("woff"), url("../fonts/raleway/raleway-extrabold.ttf") format("ttf");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/raleway-bold.woff2") format("woff2"), url("../fonts/raleway/raleway-bold.woff") format("woff"), url("../fonts/raleway/raleway-bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/raleway-semibold.woff2") format("woff2"), url("../fonts/raleway/raleway-semibold.woff") format("woff"), url("../fonts/raleway/raleway-semibold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/raleway-medium.woff2") format("woff2"), url("../fonts/raleway/raleway-medium.woff") format("woff"), url("../fonts/raleway/raleway-medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/raleway-regular.woff2") format("woff2"), url("../fonts/raleway/raleway-regular.woff") format("woff"), url("../fonts/raleway/raleway-regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/roboto/roboto-regular.woff2") format("woff2"), url("../fonts/roboto/roboto-regular.woff") format("woff"), url("../fonts/roboto/roboto-regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal; }
 .new-padding {
   padding: 80px 0; }
 
 .wide-btn {
   width: 170px;
   height: 50px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'raleway', sans-serif;
   font-weight: 800;
   font-size: 14px;
   color: #fff;
@@ -19,7 +58,7 @@
 
 .narrow-btn {
   padding: 4px 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #8c8c8c;
@@ -29,7 +68,7 @@
   border: solid 1px #ebebeb; }
 
 .section-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'raleway', sans-serif;
   font-weight: 600;
   font-size: 30px;
   color: #555555;
@@ -37,7 +76,7 @@
   text-align: center; }
 
 .section-title-desc {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #8c8c8c;
@@ -64,7 +103,7 @@ header {
       header .logo-menu-wrap .logo-wrap:hover {
         text-decoration: none; }
       header .logo-menu-wrap .logo-wrap span {
-        font-family: 'Raleway', sans-serif;
+        font-family: 'raleway', sans-serif;
         font-weight: 400;
         font-size: 34px;
         color: #fff;
@@ -72,7 +111,7 @@ header {
     header .logo-menu-wrap .menu-wrap-top {
       display: flex; }
       header .logo-menu-wrap .menu-wrap-top .nav-top {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'montserrat', sans-serif;
         font-weight: 400;
         font-size: 14px;
         color: #fff;
@@ -118,13 +157,13 @@ header {
       fill: #555555;
       margin-bottom: 20px; }
     #pluses .pluses-wrap .pluses-unit-wrap .pluses-unit-title {
-      font-family: 'Raleway', sans-serif;
+      font-family: 'raleway', sans-serif;
       font-weight: 600;
       font-size: 22px;
       color: #555555;
       margin-bottom: 18px; }
     #pluses .pluses-wrap .pluses-unit-wrap .pluses-unit-desc {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'montserrat', sans-serif;
       font-weight: 400;
       font-size: 14px;
       color: #8c8c8c; }
@@ -164,7 +203,7 @@ header {
       display: flex;
       flex-direction: column; }
       #buy-wp .buy-wp-wrap .buy-wp-left-side .buy-wp-title {
-        font-family: 'Raleway', sans-serif;
+        font-family: 'raleway', sans-serif;
         font-weight: 400;
         font-size: 28px;
         color: #fff;
@@ -172,7 +211,7 @@ header {
         #buy-wp .buy-wp-wrap .buy-wp-left-side .buy-wp-title span {
           color: #c7b299; }
       #buy-wp .buy-wp-wrap .buy-wp-left-side .buy-wp-desc {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'montserrat', sans-serif;
         font-weight: 400;
         font-size: 18px;
         color: #615855; }
@@ -200,12 +239,12 @@ header {
 footer .main-footer {
   background: #191919; }
   footer .main-footer .main-footer-wrap {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #555555; }
     footer .main-footer .main-footer-wrap .footer-title {
-      font-family: 'Raleway', sans-serif;
+      font-family: 'raleway', sans-serif;
       font-weight: 400;
       font-size: 24px;
       color: #fff;
@@ -222,7 +261,7 @@ footer .main-footer {
         footer .main-footer .main-footer-wrap .footer-about-company .logo-footer-wrap:hover {
           text-decoration: none; }
         footer .main-footer .main-footer-wrap .footer-about-company .logo-footer-wrap span {
-          font-family: 'Raleway', sans-serif;
+          font-family: 'raleway', sans-serif;
           font-weight: 400;
           font-size: 34px;
           color: #fff;
@@ -296,7 +335,7 @@ footer .main-footer {
 footer .under-footer {
   background: #111111;
   padding: 45px 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montserrat', sans-serif;
   font-weight: 400;
   font-size: 13px;
   color: #555555; }
