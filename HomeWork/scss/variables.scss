@@ -122,6 +122,11 @@ $under-foot-color: #111111;
   background: transparent;
   border-radius: 3px;
   border: solid 1px #ebebeb;
+  &:focus {
+    outline: none;
+    background-color: #998675;
+    color: #fff;
+  }
 }
 .section-title {
   @include font-raleway(600, 30px, $dark-color-title);

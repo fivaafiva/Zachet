@@ -160,12 +160,38 @@ header {
     .our-project-nav {
       display: flex;
       justify-content: space-between;
-      width: 600px;
+      min-width: 600px;
+      margin-bottom: 40px;
+    }
+  }
+  .our-project-preview-wrap {
+    @include media-breakpoint-only(xl) {
+      justify-content: space-between;
+      .our-project-preview-unit:nth-child(n+4) {
+        margin-top: 30px;
+      }
+    }
+    .our-project-preview-unit {
+      height: 337px;
+      width: 370px;
+      background-color: $gray-color;
+      background-clip: content-box;
+      .our-project-preview-desc {
+        padding: 21.5px;
+        width: 370px;
+        h3 {
+          @include font-raleway(500, 20px, $beige-color);
+          line-height: normal;
+        }
+        span {
+          @include font-montserrat(400, 14px, #d1d1d1)
+        }
+      }
     }
   }
 }
 #brands {
-  background: #3e403f url("../img/mountain.jpg") no-repeat center center;
+background: #3e403f url("../img/mountain.jpg") no-repeat center center;
   background-size: cover;
   .brands-wrap {
     padding: 138px 0;
@@ -188,6 +214,7 @@ footer {
         display: flex;
         flex-flow: wrap column;
         .logo-footer-wrap {
+          width: 178px;
           display: flex;
           align-content: center;
           margin-top: -20px;

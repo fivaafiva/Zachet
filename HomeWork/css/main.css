@@ -66,6 +66,10 @@
   background: transparent;
   border-radius: 3px;
   border: solid 1px #ebebeb; }
+  .narrow-btn:focus {
+    outline: none;
+    background-color: #998675;
+    color: #fff; }
 
 .section-title {
   font-family: 'raleway', sans-serif;
@@ -226,7 +230,32 @@ header {
   #our-project .our-project-wrap .our-project-nav {
     display: flex;
     justify-content: space-between;
-    width: 600px; }
+    min-width: 600px;
+    margin-bottom: 40px; }
+@media (min-width: 1200px) {
+  #our-project .our-project-preview-wrap {
+    justify-content: space-between; }
+    #our-project .our-project-preview-wrap .our-project-preview-unit:nth-child(n+4) {
+      margin-top: 30px; } }
+#our-project .our-project-preview-wrap .our-project-preview-unit {
+  height: 337px;
+  width: 370px;
+  background-color: #fbfaf8;
+  background-clip: content-box; }
+  #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-desc {
+    padding: 21.5px;
+    width: 370px; }
+    #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-desc h3 {
+      font-family: 'raleway', sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      color: #c7b299;
+      line-height: normal; }
+    #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-desc span {
+      font-family: 'montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #d1d1d1; }
 
 #brands {
   background: #3e403f url("../img/mountain.jpg") no-repeat center center;
@@ -254,6 +283,7 @@ footer .main-footer {
       display: flex;
       flex-flow: wrap column; }
       footer .main-footer .main-footer-wrap .footer-about-company .logo-footer-wrap {
+        width: 178px;
         display: flex;
         align-content: center;
         margin-top: -20px;
