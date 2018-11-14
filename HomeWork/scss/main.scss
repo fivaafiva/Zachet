@@ -1,10 +1,11 @@
 @import "variables.scss";
 @import "breakpoints";
+
 header {
   background: #3e403f url("../img/headback.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
-  .logo-menu-wrap {
+  .menu-wrap {
     padding-top: 40px;
     justify-content: space-between;
     align-items: center;
@@ -30,14 +31,21 @@ header {
     }
     .menu-wrap-top {
       display: flex;
-      .nav-top {
-        @include font-montserrat(400, 14px, $light-color);
-        text-transform: capitalize;
-        padding-right: 30px;
-        &:last-child {
-          padding-right: 0;
+      .menu-top-list {
+        padding: 0;
+        margin: 0;
+        .nav-top {
+          display: inline-block;
+          padding-right: 15px;
+          &:last-child {
+            padding-right: 0;
+          }
+          a {
+            @include font-montserrat(400, 14px, $light-color);
+            text-transform: capitalize;
+            @include hover();
+          }
         }
-        @include hover();
       }
       .ico-wrap-top {
         margin-left: 50px;
@@ -51,6 +59,67 @@ header {
         }
       }
     }
+  }
+   input {
+    outline: none;
+  }
+  input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: "Font Awesome 5 Free";
+    position: relative;
+    //font-size: 100%;
+  }
+  input::-webkit-search-decoration,
+  input::-webkit-search-cancel-button {
+    display: none;
+  }
+
+
+  input[type=search] {
+   // background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    border-radius: 10em;
+    transition: all .5s;
+
+  }
+  input[type=search]::before {
+    font-family: "Font Awesome 5 Free";
+      color:red;
+      position: relative;
+      left: -5px;
+      content: "\f007";
+
+  }
+  input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #66CC75;
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+  }
+  /* Demo 2 */
+  #demo-2 input[type=search] {
+    width: 15px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer;
+  }
+  #demo-2 input[type=search]:hover {
+    background-color: #fff;
+  }
+  #demo-2 input[type=search]:focus {
+    width: 130px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+  }
+  #demo-2 input:-moz-placeholder {
+    color: transparent;
+  }
+  #demo-2 input::-webkit-input-placeholder {
+    color: transparent;
   }
 }
 #pluses {

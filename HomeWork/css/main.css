@@ -89,53 +89,102 @@
 header {
   background: #3e403f url("../img/headback.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh; }
-  header .logo-menu-wrap {
+  height: 100vh;
+  /* Demo 2 */ }
+  header .menu-wrap {
     padding-top: 40px;
     justify-content: space-between;
     align-items: center; }
     @media (max-width: 991.98px) {
-      header .logo-menu-wrap {
+      header .menu-wrap {
         flex-direction: column; } }
-    header .logo-menu-wrap .logo-wrap {
+    header .menu-wrap .logo-wrap {
       display: flex;
       align-content: center; }
-      header .logo-menu-wrap .logo-wrap:hover svg {
+      header .menu-wrap .logo-wrap:hover svg {
         fill: #c7b299; }
-      header .logo-menu-wrap .logo-wrap svg {
+      header .menu-wrap .logo-wrap svg {
         fill: #fff; }
-      header .logo-menu-wrap .logo-wrap:hover {
+      header .menu-wrap .logo-wrap:hover {
         text-decoration: none; }
-      header .logo-menu-wrap .logo-wrap span {
+      header .menu-wrap .logo-wrap span {
         font-family: 'raleway', sans-serif;
         font-weight: 400;
         font-size: 34px;
         color: #fff;
         letter-spacing: -1.4px; }
-    header .logo-menu-wrap .menu-wrap-top {
+    header .menu-wrap .menu-wrap-top {
       display: flex; }
-      header .logo-menu-wrap .menu-wrap-top .nav-top {
-        font-family: 'montserrat', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        color: #fff;
-        text-transform: capitalize;
-        padding-right: 30px; }
-        header .logo-menu-wrap .menu-wrap-top .nav-top:last-child {
-          padding-right: 0; }
-        header .logo-menu-wrap .menu-wrap-top .nav-top:hover {
-          text-decoration: none;
-          color: #c7b299; }
-      header .logo-menu-wrap .menu-wrap-top .ico-wrap-top {
+      header .menu-wrap .menu-wrap-top .menu-top-list {
+        padding: 0;
+        margin: 0; }
+        header .menu-wrap .menu-wrap-top .menu-top-list .nav-top {
+          display: inline-block;
+          padding-right: 15px; }
+          header .menu-wrap .menu-wrap-top .menu-top-list .nav-top:last-child {
+            padding-right: 0; }
+          header .menu-wrap .menu-wrap-top .menu-top-list .nav-top a {
+            font-family: 'montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+            text-transform: capitalize; }
+            header .menu-wrap .menu-wrap-top .menu-top-list .nav-top a:hover {
+              text-decoration: none;
+              color: #c7b299; }
+      header .menu-wrap .menu-wrap-top .ico-wrap-top {
         margin-left: 50px;
         text-decoration: none; }
-        header .logo-menu-wrap .menu-wrap-top .ico-wrap-top span {
+        header .menu-wrap .menu-wrap-top .ico-wrap-top span {
           color: #fff; }
-          header .logo-menu-wrap .menu-wrap-top .ico-wrap-top span:first-child {
+          header .menu-wrap .menu-wrap-top .ico-wrap-top span:first-child {
             padding-right: 15px; }
-          header .logo-menu-wrap .menu-wrap-top .ico-wrap-top span:hover {
+          header .menu-wrap .menu-wrap-top .ico-wrap-top span:hover {
             text-decoration: none;
             color: #c7b299; }
+  header input {
+    outline: none; }
+  header input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: "Font Awesome 5 Free";
+    position: relative; }
+  header input::-webkit-search-decoration,
+  header input::-webkit-search-cancel-button {
+    display: none; }
+  header input[type=search] {
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    border-radius: 10em;
+    transition: all .5s; }
+  header input[type=search]::before {
+    font-family: "Font Awesome 5 Free";
+    color: red;
+    position: relative;
+    left: -5px;
+    content: "\f007"; }
+  header input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #66CC75;
+    box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
+  header #demo-2 input[type=search] {
+    width: 15px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer; }
+  header #demo-2 input[type=search]:hover {
+    background-color: #fff; }
+  header #demo-2 input[type=search]:focus {
+    width: 130px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto; }
+  header #demo-2 input:-moz-placeholder {
+    color: transparent; }
+  header #demo-2 input::-webkit-input-placeholder {
+    color: transparent; }
 
 #pluses .pluses-wrap {
   justify-content: space-around; }
