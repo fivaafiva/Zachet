@@ -90,17 +90,25 @@ header {
   background: #3e403f url("../img/headback.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
-  /* Demo 2 */ }
+  padding-top: 40px; }
   header .menu-wrap {
-    padding-top: 40px;
     justify-content: space-between;
     align-items: center; }
     @media (max-width: 991.98px) {
       header .menu-wrap {
         flex-direction: column; } }
+    @media (max-width: 767.98px) {
+      header .menu-wrap {
+        display: block; } }
+    @media (min-width: 768px) {
+      header .menu-wrap .navbar {
+        display: none; } }
     header .menu-wrap .logo-wrap {
       display: flex;
       align-content: center; }
+      @media (max-width: 767.98px) {
+        header .menu-wrap .logo-wrap {
+          display: none; } }
       header .menu-wrap .logo-wrap:hover svg {
         fill: #c7b299; }
       header .menu-wrap .logo-wrap svg {
@@ -113,78 +121,111 @@ header {
         font-size: 34px;
         color: #fff;
         letter-spacing: -1.4px; }
-    header .menu-wrap .menu-wrap-top {
+    header .menu-wrap .menu-list-wrap {
       display: flex; }
-      header .menu-wrap .menu-wrap-top .menu-top-list {
+      @media (max-width: 991.98px) {
+        header .menu-wrap .menu-list-wrap {
+          flex-direction: column;
+          align-items: center;
+          margin-top: 10px; } }
+      @media (max-width: 767.98px) {
+        header .menu-wrap .menu-list-wrap {
+          display: none; } }
+      header .menu-wrap .menu-list-wrap .menu-top-list {
         padding: 0;
         margin: 0; }
-        header .menu-wrap .menu-wrap-top .menu-top-list .nav-top {
+        header .menu-wrap .menu-list-wrap .menu-top-list .nav-top {
           display: inline-block;
           padding-right: 15px; }
-          header .menu-wrap .menu-wrap-top .menu-top-list .nav-top:last-child {
+          header .menu-wrap .menu-list-wrap .menu-top-list .nav-top:last-child {
             padding-right: 0; }
-          header .menu-wrap .menu-wrap-top .menu-top-list .nav-top a {
+          header .menu-wrap .menu-list-wrap .menu-top-list .nav-top a {
             font-family: 'montserrat', sans-serif;
             font-weight: 400;
             font-size: 14px;
             color: #fff;
             text-transform: capitalize; }
-            header .menu-wrap .menu-wrap-top .menu-top-list .nav-top a:hover {
+            header .menu-wrap .menu-list-wrap .menu-top-list .nav-top a:hover {
               text-decoration: none;
               color: #c7b299; }
-      header .menu-wrap .menu-wrap-top .ico-wrap-top {
-        margin-left: 50px;
-        text-decoration: none; }
-        header .menu-wrap .menu-wrap-top .ico-wrap-top span {
+      header .menu-wrap .menu-list-wrap .ico-top-wrap {
+        display: flex;
+        margin-left: 50px; }
+        @media (max-width: 991.98px) {
+          header .menu-wrap .menu-list-wrap .ico-top-wrap {
+            margin: 5px 0 0 0; } }
+        header .menu-wrap .menu-list-wrap .ico-top-wrap .shop-ico-top {
+          text-decoration: none; }
+          header .menu-wrap .menu-list-wrap .ico-top-wrap .shop-ico-top span {
+            color: #fff; }
+            header .menu-wrap .menu-list-wrap .ico-top-wrap .shop-ico-top span:first-child {
+              padding-right: 15px; }
+            header .menu-wrap .menu-list-wrap .ico-top-wrap .shop-ico-top span:hover {
+              text-decoration: none;
+              color: #c7b299; }
+        header .menu-wrap .menu-list-wrap .ico-top-wrap .search-ico-top input {
+          width: 15px;
+          padding-left: 10px;
+          color: transparent;
+          cursor: pointer;
+          background: transparent url(../img/icon-search.svg) no-repeat 3px center;
+          border: none;
+          border-radius: 10em;
+          transition: all .5s;
+          outline: none;
+          -webkit-appearance: textfield;
+          -webkit-box-sizing: content-box; }
+          header .menu-wrap .menu-list-wrap .ico-top-wrap .search-ico-top input:focus {
+            width: 130px;
+            padding-left: 32px;
+            color: white;
+            background-color: transparent;
+            cursor: auto;
+            border-bottom: 2px solid #c7b299; }
+            header .menu-wrap .menu-list-wrap .ico-top-wrap .search-ico-top input:focus::-webkit-input-placeholder {
+              color: white; }
+          header .menu-wrap .menu-list-wrap .ico-top-wrap .search-ico-top input::-webkit-search-decoration, header .menu-wrap .menu-list-wrap .ico-top-wrap .search-ico-top input::-webkit-search-cancel-button {
+            display: none; }
+          header .menu-wrap .menu-list-wrap .ico-top-wrap .search-ico-top input::-moz-placeholder {
+            color: transparent; }
+          header .menu-wrap .menu-list-wrap .ico-top-wrap .search-ico-top input::-webkit-input-placeholder {
+            color: transparent; }
+  header .carousel-wrap {
+    margin-top: 5%; }
+    header .carousel-wrap .carousel {
+      width: 100%;
+      height: 80vh; }
+      header .carousel-wrap .carousel .carousel-item-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 14% 100px 0 100px;
+        background: none;
+        color: white; }
+        header .carousel-wrap .carousel .carousel-item-wrap h1 {
+          font-family: 'raleway', sans-serif;
+          font-weight: 500;
+          font-size: 34px;
           color: #fff; }
-          header .menu-wrap .menu-wrap-top .ico-wrap-top span:first-child {
-            padding-right: 15px; }
-          header .menu-wrap .menu-wrap-top .ico-wrap-top span:hover {
-            text-decoration: none;
-            color: #c7b299; }
-  header input {
-    outline: none; }
-  header input[type=search] {
-    -webkit-appearance: textfield;
-    -webkit-box-sizing: content-box;
-    font-family: "Font Awesome 5 Free";
-    position: relative; }
-  header input::-webkit-search-decoration,
-  header input::-webkit-search-cancel-button {
-    display: none; }
-  header input[type=search] {
-    border: solid 1px #ccc;
-    padding: 9px 10px 9px 32px;
-    border-radius: 10em;
-    transition: all .5s; }
-  header input[type=search]::before {
-    font-family: "Font Awesome 5 Free";
-    color: red;
-    position: relative;
-    left: -5px;
-    content: "\f007"; }
-  header input[type=search]:focus {
-    width: 130px;
-    background-color: #fff;
-    border-color: #66CC75;
-    box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
-  header #demo-2 input[type=search] {
-    width: 15px;
-    padding-left: 10px;
-    color: transparent;
-    cursor: pointer; }
-  header #demo-2 input[type=search]:hover {
-    background-color: #fff; }
-  header #demo-2 input[type=search]:focus {
-    width: 130px;
-    padding-left: 32px;
-    color: #000;
-    background-color: #fff;
-    cursor: auto; }
-  header #demo-2 input:-moz-placeholder {
-    color: transparent; }
-  header #demo-2 input::-webkit-input-placeholder {
-    color: transparent; }
+        header .carousel-wrap .carousel .carousel-item-wrap span {
+          font-family: 'raleway', sans-serif;
+          font-weight: 800;
+          font-size: 52px;
+          color: #fff; }
+        header .carousel-wrap .carousel .carousel-item-wrap p {
+          width: 730px;
+          font-family: 'montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          color: #fff;
+          text-align: center; }
+      header .carousel-wrap .carousel .carousel-control-next-icon, header .carousel-wrap .carousel .carousel-control-prev-icon {
+        width: 43px;
+        height: 74px; }
+      header .carousel-wrap .carousel .carousel-control-next-icon {
+        background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 40 73'%3E%3Cpath  d='M 1.97 72.98C 1.97 72.98 40 36.5 40 36.5 40 36.5 1.97 0.02 1.97 0.02 1.97 0.02 0 2.02 0 2.02 0 2.02 35.93 36.5 35.93 36.5 35.93 36.5 0 70.98 0 70.98 0 70.98 1.97 72.98 1.97 72.98Z'/%3E%3C/svg%3E") no-repeat; }
+      header .carousel-wrap .carousel .carousel-control-prev-icon {
+        background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 40 73'%3E%3Cpath d='M 38.03 72.98C 38.03 72.98 0 36.5 0 36.5 0 36.5 38.03 0.02 38.03 0.02 38.03 0.02 40 2.02 40 2.02 40 2.02 4.07 36.5 4.07 36.5 4.07 36.5 40 70.98 40 70.98 40 70.98 38.03 72.98 38.03 72.98Z'/%3E%3C/svg%3E") no-repeat; }
 
 #pluses .pluses-wrap {
   justify-content: space-around; }

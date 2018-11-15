@@ -5,16 +5,27 @@ header {
   background: #3e403f url("../img/headback.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
+  padding-top: 40px;
   .menu-wrap {
-    padding-top: 40px;
     justify-content: space-between;
     align-items: center;
     @include media-breakpoint-down(md) {
       flex-direction: column;
     }
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+    .navbar {
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
+    }
     .logo-wrap {
       display: flex;
       align-content: center;
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
       &:hover svg {
         fill: $beige-color;
       }
@@ -29,97 +40,122 @@ header {
         letter-spacing: -1.4px;
       }
     }
-    .menu-wrap-top {
+    .menu-list-wrap {
       display: flex;
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+      }
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
       .menu-top-list {
-        padding: 0;
-        margin: 0;
-        .nav-top {
-          display: inline-block;
-          padding-right: 15px;
-          &:last-child {
-            padding-right: 0;
-          }
-          a {
-            @include font-montserrat(400, 14px, $light-color);
-            text-transform: capitalize;
-            @include hover();
-          }
-        }
-      }
-      .ico-wrap-top {
-        margin-left: 50px;
-        text-decoration: none;
-        span{
-          color: $light-color;
-          &:first-child {
+          padding: 0;
+          margin: 0;
+          .nav-top {
+            display: inline-block;
             padding-right: 15px;
+            &:last-child {
+              padding-right: 0;
+            }
+            a {
+              @include font-montserrat(400, 14px, $light-color);
+              text-transform: capitalize;
+              @include hover();
+            }
           }
-          @include hover();
         }
-      }
+      .ico-top-wrap {
+          display: flex;
+          margin-left: 50px;
+          @include media-breakpoint-down(md) {
+            margin: 5px 0 0 0;
+          }
+          .shop-ico-top {
+            text-decoration: none;
+            span{
+              color: $light-color;
+              &:first-child {
+                padding-right: 15px;
+              }
+              @include hover();
+            }
+          }
+          .search-ico-top {
+            input {
+              width: 15px;
+              padding-left: 10px;
+              color: transparent;
+              cursor: pointer;
+              background: transparent url(../img/icon-search.svg) no-repeat 3px center;
+              border: none;
+              border-radius: 10em;
+              transition: all .5s;
+              outline: none;
+              &:focus {
+                width: 130px;
+                padding-left: 32px;
+                color: white;
+                background-color: transparent;
+                cursor: auto;
+                border-bottom: 2px solid $beige-color;
+                &::-webkit-input-placeholder {
+                  color: white;
+                }
+              }
+              -webkit-appearance: textfield;
+              -webkit-box-sizing: content-box;
+              &::-webkit-search-decoration,
+              &::-webkit-search-cancel-button {
+                display: none;
+              }
+              &::-moz-placeholder {
+                color: transparent;
+              }
+              &::-webkit-input-placeholder {
+                color: transparent;
+              }
+            }
+          }
+        }
     }
   }
-   input {
-    outline: none;
-  }
-  input[type=search] {
-    -webkit-appearance: textfield;
-    -webkit-box-sizing: content-box;
-    font-family: "Font Awesome 5 Free";
-    position: relative;
-    //font-size: 100%;
-  }
-  input::-webkit-search-decoration,
-  input::-webkit-search-cancel-button {
-    display: none;
-  }
-
-
-  input[type=search] {
-   // background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-    border: solid 1px #ccc;
-    padding: 9px 10px 9px 32px;
-    border-radius: 10em;
-    transition: all .5s;
-
-  }
-  input[type=search]::before {
-    font-family: "Font Awesome 5 Free";
-      color:red;
-      position: relative;
-      left: -5px;
-      content: "\f007";
-
-  }
-  input[type=search]:focus {
-    width: 130px;
-    background-color: #fff;
-    border-color: #66CC75;
-    box-shadow: 0 0 5px rgba(109,207,246,.5);
-  }
-  /* Demo 2 */
-  #demo-2 input[type=search] {
-    width: 15px;
-    padding-left: 10px;
-    color: transparent;
-    cursor: pointer;
-  }
-  #demo-2 input[type=search]:hover {
-    background-color: #fff;
-  }
-  #demo-2 input[type=search]:focus {
-    width: 130px;
-    padding-left: 32px;
-    color: #000;
-    background-color: #fff;
-    cursor: auto;
-  }
-  #demo-2 input:-moz-placeholder {
-    color: transparent;
-  }
-  #demo-2 input::-webkit-input-placeholder {
-    color: transparent;
+  .carousel-wrap {
+    margin-top: 5%;
+    .carousel {
+      width: 100%;
+      height: 80vh;
+      .carousel-item-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 14% 100px 0 100px;
+        background: none;
+        color: white;
+        h1 {
+          @include font-raleway(500, 34px, $light-color);
+        }
+        span {
+          @include font-raleway(800, 52px, $light-color);
+        }
+        p {
+          width: 730px;
+          @include  font-montserrat(400, 16px, $light-color);
+          text-align: center;
+        }
+      }
+      .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 43px;
+        height: 74px
+      }
+      .carousel-control-next-icon {
+        background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 40 73'%3E%3Cpath  d='M 1.97 72.98C 1.97 72.98 40 36.5 40 36.5 40 36.5 1.97 0.02 1.97 0.02 1.97 0.02 0 2.02 0 2.02 0 2.02 35.93 36.5 35.93 36.5 35.93 36.5 0 70.98 0 70.98 0 70.98 1.97 72.98 1.97 72.98Z'/%3E%3C/svg%3E") no-repeat;
+      }
+      .carousel-control-prev-icon {
+        background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 40 73'%3E%3Cpath d='M 38.03 72.98C 38.03 72.98 0 36.5 0 36.5 0 36.5 38.03 0.02 38.03 0.02 38.03 0.02 40 2.02 40 2.02 40 2.02 4.07 36.5 4.07 36.5 4.07 36.5 40 70.98 40 70.98 40 70.98 38.03 72.98 38.03 72.98Z'/%3E%3C/svg%3E") no-repeat;
+      }
+    }
   }
 }
 #pluses {
