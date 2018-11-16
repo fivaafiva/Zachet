@@ -5,19 +5,32 @@ header {
   background: #3e403f url("../img/headback.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
-  padding-top: 40px;
+  @include media-breakpoint-down(sm) {
+    height: auto;
+  }
   .menu-wrap {
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    top: 40px;
     @include media-breakpoint-down(md) {
       flex-direction: column;
     }
     @include media-breakpoint-down(sm) {
       display: block;
+      top: 0;
     }
     .navbar {
+      background-color: transparent;
       @include media-breakpoint-up(md) {
         display: none;
+      }
+      .navbar-brand {
+        fill: $light-color;
+        span {
+          @include font-raleway(400, 26px, $light-color);
+          letter-spacing: -1.4px;
+        }
       }
     }
     .logo-wrap {
@@ -70,7 +83,7 @@ header {
           display: flex;
           margin-left: 50px;
           @include media-breakpoint-down(md) {
-            margin: 5px 0 0 0;
+            margin: 10px 0 0 0;
           }
           .shop-ico-top {
             text-decoration: none;
@@ -122,17 +135,27 @@ header {
     }
   }
   .carousel-wrap {
-    margin-top: 5%;
+    margin-top: 40px;
+    @include media-breakpoint-down(sm){
+      display: none;
+    }
     .carousel {
       width: 100%;
-      height: 80vh;
+      height: 87vh;
+      @include media-breakpoint-down(md) {
+        height: 76vh;
+      }
       .carousel-item-wrap {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 14% 100px 0 100px;
+        padding: 14% 144px 0 144px;
         background: none;
         color: white;
+        text-align: center;
+        @include media-breakpoint-down(md) {
+          padding-top: 30px;
+        }
         h1 {
           @include font-raleway(500, 34px, $light-color);
         }
@@ -140,9 +163,11 @@ header {
           @include font-raleway(800, 52px, $light-color);
         }
         p {
-          width: 730px;
+          width: 95%;
           @include  font-montserrat(400, 16px, $light-color);
-          text-align: center;
+        }
+        button {
+          margin-top: 30px;
         }
       }
       .carousel-control-next-icon, .carousel-control-prev-icon {
