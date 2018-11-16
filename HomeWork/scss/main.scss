@@ -32,6 +32,16 @@ header {
           letter-spacing: -1.4px;
         }
       }
+      .form-inline {
+        .form-control {
+          background: transparent;
+          &:focus {
+            border-color: $beige-color;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(199,178,153,.25);
+          }
+        }
+      }
     }
     .logo-wrap {
       display: flex;
@@ -207,6 +217,16 @@ header {
       }
       &:hover:after {
         background: $beige-color;
+      }
+      @include media-breakpoint-down(md) {
+        &:nth-child(n+3) {
+          margin-top: 30px;
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        &:nth-child(n+2) {
+          margin-top: 15px;
+        }
       }
       .pluses-unit-ico {
         fill: $dark-color-title;

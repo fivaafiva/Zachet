@@ -1,3 +1,4 @@
+@import "breakpoints";
 @font-face {
   font-family: 'montserrat';
   src: url('../fonts/montserrat/montserrat-regular.woff2') format('woff2'),
@@ -102,6 +103,9 @@ $under-foot-color: #111111;
 
 .new-padding {
   padding: 80px 0;
+  @include media-breakpoint-down(sm) {
+    padding: 10px 0;
+  }
 }
 .wide-btn {
   width: 170px;

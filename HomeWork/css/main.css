@@ -40,6 +40,9 @@
   font-style: normal; }
 .new-padding {
   padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .new-padding {
+      padding: 10px 0; } }
 
 .wide-btn {
   width: 170px;
@@ -118,6 +121,12 @@ header {
           font-size: 26px;
           color: #fff;
           letter-spacing: -1.4px; }
+      header .menu-wrap .navbar .form-inline .form-control {
+        background: transparent; }
+        header .menu-wrap .navbar .form-inline .form-control:focus {
+          border-color: #c7b299;
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem rgba(199, 178, 153, 0.25); }
     header .menu-wrap .logo-wrap {
       display: flex;
       align-content: center; }
@@ -273,6 +282,12 @@ header {
       background: #f1eee9; }
     #pluses .pluses-wrap .pluses-unit-wrap:hover:after {
       background: #c7b299; }
+    @media (max-width: 991.98px) {
+      #pluses .pluses-wrap .pluses-unit-wrap:nth-child(n+3) {
+        margin-top: 30px; } }
+    @media (max-width: 767.98px) {
+      #pluses .pluses-wrap .pluses-unit-wrap:nth-child(n+2) {
+        margin-top: 15px; } }
     #pluses .pluses-wrap .pluses-unit-wrap .pluses-unit-ico {
       fill: #555555;
       margin-bottom: 20px; }
