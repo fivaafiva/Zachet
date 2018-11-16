@@ -324,15 +324,32 @@ header {
     .our-project-nav {
       display: flex;
       justify-content: space-between;
-      min-width: 600px;
+      width: 600px;
       margin-bottom: 40px;
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        width: 100%;
+        .narrow-btn:nth-child(N+2) {
+          margin-top: 10px ;
+        }
+      }
     }
   }
   .our-project-preview-wrap {
-    @include media-breakpoint-only(xl) {
-      justify-content: space-between;
-      .our-project-preview-unit:nth-child(n+4) {
+    justify-content: space-between;
+    &:nth-child(n+4) {
+      margin-top: 30px;
+    }
+    @include media-breakpoint-down(lg) {
+      justify-content: space-evenly;
+      .our-project-preview-unit:nth-child(n+3) {
         margin-top: 30px;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+      .our-project-preview-unit:nth-child(n+2) {
+        margin-top: 15px;
       }
     }
     .our-project-preview-unit {
@@ -340,15 +357,30 @@ header {
       width: 370px;
       background-color: $gray-color;
       background-clip: content-box;
+      &:hover {
+        background-color: #362f2d;
+      }
       .our-project-preview-desc {
         padding: 21.5px;
         width: 370px;
+        position: relative;
         h3 {
           @include font-raleway(500, 20px, $beige-color);
           line-height: normal;
         }
         span {
           @include font-montserrat(400, 14px, #d1d1d1)
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          top: -29px;
+          left: calc(10% - 10px);
+          border: 18px solid transparent;
+          border-bottom: 12px solid $gray-color;
+          &:hover:before {
+            border-bottom: 12px solid #362f2d;
+          }
         }
       }
     }
