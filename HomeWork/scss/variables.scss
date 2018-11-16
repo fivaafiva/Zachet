@@ -114,12 +114,31 @@ $under-foot-color: #111111;
   text-transform: uppercase;
   border-radius: 3px;
   background-color: #998675;
-  box-shadow: inset 0px -3px 0 0 #736357;
+  box-shadow: inset 0px -6px 0 0 #736357;
   border:none;
-  &:hover {
+  overflow: hidden;
+  position: relative;
+  &:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 700ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 1;
   }
-  &:focus {
-    outline: none;
+  &:hover {
+    &:after {
+      left: 120%;
+      transition: all 700ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+  &:active {
+    transform: translateY(3px);
   }
 }
 .narrow-btn {

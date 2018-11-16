@@ -54,10 +54,27 @@
   text-transform: uppercase;
   border-radius: 3px;
   background-color: #998675;
-  box-shadow: inset 0px -3px 0 0 #736357;
-  border: none; }
-  .wide-btn:focus {
-    outline: none; }
+  box-shadow: inset 0px -6px 0 0 #736357;
+  border: none;
+  overflow: hidden;
+  position: relative; }
+  .wide-btn:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 700ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 1; }
+  .wide-btn:hover:after {
+    left: 120%;
+    transition: all 700ms cubic-bezier(0.19, 1, 0.22, 1); }
+  .wide-btn:active {
+    transform: translateY(3px); }
 
 .narrow-btn {
   padding: 4px 20px;
@@ -306,6 +323,9 @@ header {
 #ideas {
   background: #fbfaf8;
   padding-top: 80px; }
+  @media (max-width: 767.98px) {
+    #ideas {
+      padding-top: 15px; } }
   #ideas .ideas-wrap {
     flex-direction: column;
     align-items: center; }
@@ -324,6 +344,9 @@ header {
         left: 0; }
       #ideas .ideas-wrap .ideas-img-wrap img:nth-child(2) {
         z-index: 10; }
+        @media (max-width: 991.98px) {
+          #ideas .ideas-wrap .ideas-img-wrap img:nth-child(2) {
+            height: 100%; } }
       #ideas .ideas-wrap .ideas-img-wrap img:nth-child(3) {
         position: absolute;
         bottom: 0;
@@ -334,6 +357,11 @@ header {
   padding: 40px 0; }
   #buy-wp .buy-wp-wrap {
     justify-content: space-between; }
+    @media (max-width: 767.98px) {
+      #buy-wp .buy-wp-wrap {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
     #buy-wp .buy-wp-wrap .buy-wp-left-side {
       display: flex;
       flex-direction: column; }
@@ -350,6 +378,9 @@ header {
         font-weight: 400;
         font-size: 18px;
         color: #615855; }
+    @media (max-width: 767.98px) {
+      #buy-wp .buy-wp-wrap .wide-btn {
+        margin-top: 10px; } }
 
 #our-project .our-project-wrap {
   flex-direction: column;

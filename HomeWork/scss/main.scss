@@ -193,6 +193,7 @@ header {
     }
   }
 }
+
 #pluses {
   .pluses-wrap {
     justify-content: space-around;
@@ -245,6 +246,9 @@ header {
 #ideas {
   background: $gray-color;
   padding-top: 80px;
+  @include media-breakpoint-down(sm) {
+    padding-top: 15px;
+  }
   .ideas-wrap {
     flex-direction: column;
     align-items: center;
@@ -265,6 +269,9 @@ header {
       }
       img:nth-child(2){
         z-index: 10;
+        @include media-breakpoint-down(md) {
+          height: 100%;
+        }
       }
       img:nth-child(3){
         position: absolute;
@@ -279,6 +286,11 @@ header {
   padding: 40px 0;
   .buy-wp-wrap {
     justify-content: space-between;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
     .buy-wp-left-side {
       display: flex;
       flex-direction: column;
@@ -294,7 +306,9 @@ header {
       }
     }
     .wide-btn {
-
+      @include media-breakpoint-down(sm) {
+        margin-top: 10px;
+      }
     }
   }
 }
