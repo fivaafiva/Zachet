@@ -375,7 +375,7 @@ header {
         border-bottom: 12px solid #362f2d;
       }
       .our-project-preview-ico-link {
-        display: none;
+        visibility: hidden;
         position: absolute;
         top: 110px;
         left: 140px;
@@ -385,7 +385,7 @@ header {
         }
       }
       .our-project-preview-ico-lupa {
-        display: none;
+        visibility: hidden;
         position: absolute;
         top: 110px;
         right: 140px;
@@ -405,7 +405,8 @@ header {
         transition: ease-in-out 300ms;
       }
       &:focus [class^="our-project-preview-ico"] {
-        display: block;
+        visibility: visible;
+        transition: all ease-in-out 1300ms;
       }
       .our-project-preview-desc {
         padding: 21.5px;

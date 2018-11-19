@@ -438,7 +438,7 @@ header {
     #our-project .our-project-preview-wrap .our-project-preview-unit:hover:after {
       border-bottom: 12px solid #362f2d; }
     #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-ico-link {
-      display: none;
+      visibility: hidden;
       position: absolute;
       top: 110px;
       left: 140px;
@@ -446,7 +446,7 @@ header {
       #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-ico-link:hover {
         fill: #c7b299; }
     #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-ico-lupa {
-      display: none;
+      visibility: hidden;
       position: absolute;
       top: 110px;
       right: 140px;
@@ -461,7 +461,8 @@ header {
       filter: brightness(40%);
       transition: ease-in-out 300ms; }
     #our-project .our-project-preview-wrap .our-project-preview-unit:focus [class^="our-project-preview-ico"] {
-      display: block; }
+      visibility: visible;
+      transition: all ease-in-out 1300ms; }
     #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-desc {
       padding: 21.5px;
       width: 370px; }
