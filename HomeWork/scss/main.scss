@@ -353,34 +353,69 @@ header {
       }
     }
     .our-project-preview-unit {
+      position: relative;
       height: 337px;
       width: 370px;
       background-color: $gray-color;
       background-clip: content-box;
+      outline: none;
+      cursor: pointer;
       &:hover {
         background-color: #362f2d;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 99px;
+        left: calc(10% - 10px);
+        border: 18px solid transparent;
+        border-bottom: 12px solid $gray-color;
+      }
+      &:hover:after {
+        border-bottom: 12px solid #362f2d;
+      }
+      .our-project-preview-ico-link {
+        display: none;
+        position: absolute;
+        top: 110px;
+        left: 140px;
+        fill: $light-color;
+        &:hover {
+          fill: $beige-color;
+        }
+      }
+      .our-project-preview-ico-lupa {
+        display: none;
+        position: absolute;
+        top: 110px;
+        right: 140px;
+        fill: $light-color;
+        &:hover {
+          fill: $beige-color;
+        }
+      }
+      &:focus {
+        background-color: #362f2d;
+      }
+      &:focus:after {
+        border-bottom: 12px solid #362f2d;
+      }
+      &:focus .our-project-preview-photo {
+        filter: brightness(40%);
+        transition: ease-in-out 300ms;
+      }
+      &:focus [class^="our-project-preview-ico"] {
+        display: block;
       }
       .our-project-preview-desc {
         padding: 21.5px;
         width: 370px;
-        position: relative;
         h3 {
           @include font-raleway(500, 20px, $beige-color);
           line-height: normal;
         }
         span {
           @include font-montserrat(400, 14px, #d1d1d1)
-        }
-        &:before {
-          content: '';
-          position: absolute;
-          top: -29px;
-          left: calc(10% - 10px);
-          border: 18px solid transparent;
-          border-bottom: 12px solid $gray-color;
-          &:hover:before {
-            border-bottom: 12px solid #362f2d;
-          }
         }
       }
     }

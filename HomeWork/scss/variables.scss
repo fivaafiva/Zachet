@@ -109,7 +109,7 @@ $under-foot-color: #111111;
 }
 .wide-btn {
   width: 170px;
-  height: 50px;
+  min-height: 50px;
   @include font-raleway(800, 14px, $light-color);
   text-transform: uppercase;
   border-radius: 3px;
@@ -149,6 +149,11 @@ $under-foot-color: #111111;
   border-radius: 3px;
   border: solid 1px #ebebeb;
   &:focus {
+    outline: none;
+    background-color: #362f2d;
+    color: #fff;
+  }
+  &:hover {
     outline: none;
     background-color: #998675;
     color: #fff;

@@ -46,7 +46,7 @@
 
 .wide-btn {
   width: 170px;
-  height: 50px;
+  min-height: 50px;
   font-family: 'raleway', sans-serif;
   font-weight: 800;
   font-size: 14px;
@@ -87,6 +87,10 @@
   border-radius: 3px;
   border: solid 1px #ebebeb; }
   .narrow-btn:focus {
+    outline: none;
+    background-color: #362f2d;
+    color: #fff; }
+  .narrow-btn:hover {
     outline: none;
     background-color: #998675;
     color: #fff; }
@@ -415,16 +419,52 @@ header {
       #our-project .our-project-preview-wrap .our-project-preview-unit:nth-child(n+2) {
         margin-top: 15px; } }
   #our-project .our-project-preview-wrap .our-project-preview-unit {
+    position: relative;
     height: 337px;
     width: 370px;
     background-color: #fbfaf8;
-    background-clip: content-box; }
+    background-clip: content-box;
+    outline: none;
+    cursor: pointer; }
     #our-project .our-project-preview-wrap .our-project-preview-unit:hover {
       background-color: #362f2d; }
+    #our-project .our-project-preview-wrap .our-project-preview-unit:after {
+      content: '';
+      position: absolute;
+      bottom: 99px;
+      left: calc(10% - 10px);
+      border: 18px solid transparent;
+      border-bottom: 12px solid #fbfaf8; }
+    #our-project .our-project-preview-wrap .our-project-preview-unit:hover:after {
+      border-bottom: 12px solid #362f2d; }
+    #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-ico-link {
+      display: none;
+      position: absolute;
+      top: 110px;
+      left: 140px;
+      fill: #fff; }
+      #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-ico-link:hover {
+        fill: #c7b299; }
+    #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-ico-lupa {
+      display: none;
+      position: absolute;
+      top: 110px;
+      right: 140px;
+      fill: #fff; }
+      #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-ico-lupa:hover {
+        fill: #c7b299; }
+    #our-project .our-project-preview-wrap .our-project-preview-unit:focus {
+      background-color: #362f2d; }
+    #our-project .our-project-preview-wrap .our-project-preview-unit:focus:after {
+      border-bottom: 12px solid #362f2d; }
+    #our-project .our-project-preview-wrap .our-project-preview-unit:focus .our-project-preview-photo {
+      filter: brightness(40%);
+      transition: ease-in-out 300ms; }
+    #our-project .our-project-preview-wrap .our-project-preview-unit:focus [class^="our-project-preview-ico"] {
+      display: block; }
     #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-desc {
       padding: 21.5px;
-      width: 370px;
-      position: relative; }
+      width: 370px; }
       #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-desc h3 {
         font-family: 'raleway', sans-serif;
         font-weight: 500;
@@ -436,15 +476,6 @@ header {
         font-weight: 400;
         font-size: 14px;
         color: #d1d1d1; }
-      #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-desc:before {
-        content: '';
-        position: absolute;
-        top: -29px;
-        left: calc(10% - 10px);
-        border: 18px solid transparent;
-        border-bottom: 12px solid #fbfaf8; }
-        #our-project .our-project-preview-wrap .our-project-preview-unit .our-project-preview-desc:before:hover:before {
-          border-bottom: 12px solid #362f2d; }
 
 #video-pres video {
   width: 100%;
