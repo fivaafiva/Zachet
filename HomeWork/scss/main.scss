@@ -406,7 +406,6 @@ header {
       }
       &:focus [class^="our-project-preview-ico"] {
         visibility: visible;
-        transition: all ease-in-out 1300ms;
       }
       .our-project-preview-desc {
         padding: 21.5px;
@@ -423,9 +422,12 @@ header {
   }
 }
 #video-pres {
+  overflow: hidden;
   video {
+    height: 400px;
     width: 100%;
-    max-height: 500px;
+    object-fit: cover;
+    object-position: center center;
   }
 }
 #mobile-pres {
