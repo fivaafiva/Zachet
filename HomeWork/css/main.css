@@ -478,12 +478,52 @@ header {
         color: #d1d1d1; }
 
 #video-pres {
-  overflow: hidden; }
-  #video-pres video {
-    height: 400px;
+  overflow: hidden;
+  position: relative; }
+  #video-pres .video-play {
+    height: 600px;
     width: 100%;
     object-fit: cover;
     object-position: center center; }
+  #video-pres .video-play-btn {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 110px;
+    background: #00000020;
+    padding: 10px;
+    box-sizing: content-box;
+    border-radius: 50%;
+    fill: #fff; }
+  #video-pres .video-play-btn--hide {
+    display: none; }
+  #video-pres .video-pres-desc {
+    width: 506px;
+    height: 128px;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 140px;
+    bottom: 0; }
+    #video-pres .video-pres-desc .video-pres-desc-title {
+      font-family: 'raleway', sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      color: #fff; }
+    #video-pres .video-pres-desc p {
+      font-family: 'montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: #fff; }
+    #video-pres .video-pres-desc .video-pres-desc-time {
+      font-family: 'montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #c7b299; }
 
 #mobile-pres {
   padding-top: 80px;

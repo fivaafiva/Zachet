@@ -423,11 +423,48 @@ header {
 }
 #video-pres {
   overflow: hidden;
-  video {
-    height: 400px;
+  position: relative;
+  .video-play {
+    height: 600px;
     width: 100%;
     object-fit: cover;
     object-position: center center;
+  }
+  .video-play-btn {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 110px;
+    background: #00000020;
+    padding: 10px;
+    box-sizing: content-box;
+    border-radius: 50%;
+    fill: #fff;
+  }
+  .video-play-btn--hide {
+    display: none;
+  }
+  .video-pres-desc {
+    width: 506px;
+    height: 128px;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 140px;
+    bottom: 0;
+    .video-pres-desc-title {
+      @include font-raleway(500, 30px, $light-color);
+    }
+    p {
+      @include font-montserrat(400, 16px, $light-color);
+    }
+    .video-pres-desc-time {
+      @include font-montserrat(400, 14px, $beige-color);
+    }
   }
 }
 #mobile-pres {

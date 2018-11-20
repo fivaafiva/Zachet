@@ -99,23 +99,26 @@
     <session id="530893350">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="297" />
-          <entry key="scss" value="1255" />
+          <entry key="html" value="459" />
+          <entry key="js" value="53" />
+          <entry key="scss" value="1429" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="297" />
-          <entry key="SCSS" value="1255" />
+          <entry key="HTML" value="459" />
+          <entry key="JavaScript" value="53" />
+          <entry key="SCSS" value="1429" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -137,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="710">
-              <caret line="589" column="7" lean-forward="true" selection-start-line="589" selection-start-column="7" selection-end-line="589" selection-end-column="7" />
+            <state relative-caret-position="371">
+              <caret line="362" column="43" selection-start-line="362" selection-start-column="23" selection-end-line="362" selection-end-column="43" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -152,34 +155,31 @@
                 <element signature="n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#p#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#19984#25481#0" />
-                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/my-video.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+            <state relative-caret-position="330">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="426" column="17" selection-start-line="426" selection-start-column="17" selection-end-line="426" selection-end-column="17" />
+            <state relative-caret-position="77">
+              <caret line="448" column="20" selection-start-line="448" selection-start-column="20" selection-end-line="448" selection-end-column="20" />
               <folding>
                 <element signature="e#57#5604#0" />
                 <element signature="e#5614#6724#0" />
                 <element signature="e#6732#7473#0" />
                 <element signature="e#7482#8190#0" />
-                <element signature="e#8204#10854#0" />
+                <element signature="e#8204#10810#0" />
                 <element signature="e#8226#8706#0" />
                 <element signature="e#10938#11641#0" />
                 <element signature="e#11649#12511#0" />
@@ -194,7 +194,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4620">
+            <state relative-caret-position="431">
               <caret line="159" column="3" selection-start-line="159" selection-start-column="3" selection-end-line="159" selection-end-column="3" />
             </state>
           </provider>
@@ -229,10 +229,10 @@
         <option value="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_breakpoints.scss" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/scss/variables.scss" />
-        <option value="$PROJECT_DIR$/scss/main.scss" />
         <option value="$PROJECT_DIR$/js/myvideo.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/my-video.js" />
+        <option value="$PROJECT_DIR$/scss/main.scss" />
       </list>
     </option>
   </component>
@@ -266,7 +266,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,6 +282,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,16 +345,17 @@
       <workItem from="1542344731847" duration="14767000" />
       <workItem from="1542633949543" duration="7328000" />
       <workItem from="1542689444794" duration="5188000" />
+      <workItem from="1542727442210" duration="5547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164215000" />
+    <option name="totallyTimeSpent" value="169762000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17597471" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17567568" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -387,8 +388,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/scss/main.min.css" />
     <entry file="file://$PROJECT_DIR$/css/main.css.map">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/main.css.map" />
     <entry file="file://$PROJECT_DIR$/css/variables.css" />
@@ -421,37 +422,10 @@
         <state relative-caret-position="-2700" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4620">
-          <caret line="159" column="3" selection-start-line="159" selection-start-column="3" selection-end-line="159" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="426" column="17" selection-start-line="426" selection-start-column="17" selection-end-line="426" selection-end-column="17" />
-          <folding>
-            <element signature="e#57#5604#0" />
-            <element signature="e#5614#6724#0" />
-            <element signature="e#6732#7473#0" />
-            <element signature="e#7482#8190#0" />
-            <element signature="e#8204#10854#0" />
-            <element signature="e#8226#8706#0" />
-            <element signature="e#10938#11641#0" />
-            <element signature="e#11649#12511#0" />
-            <element signature="e#12525#14157#0" />
-            <element signature="e#14166#14371#0" />
-            <element signature="e#14380#18467#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="589" column="7" lean-forward="true" selection-start-line="589" selection-start-column="7" selection-end-line="589" selection-end-column="7" />
+        <state relative-caret-position="371">
+          <caret line="362" column="43" selection-start-line="362" selection-start-column="23" selection-end-line="362" selection-end-column="43" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -465,17 +439,41 @@
             <element signature="n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#p#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#19984#25481#0" />
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="159" column="3" selection-start-line="159" selection-start-column="3" selection-end-line="159" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/my-video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        <state relative-caret-position="330">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="448" column="20" selection-start-line="448" selection-start-column="20" selection-end-line="448" selection-end-column="20" />
+          <folding>
+            <element signature="e#57#5604#0" />
+            <element signature="e#5614#6724#0" />
+            <element signature="e#6732#7473#0" />
+            <element signature="e#7482#8190#0" />
+            <element signature="e#8204#10810#0" />
+            <element signature="e#8226#8706#0" />
+            <element signature="e#10938#11641#0" />
+            <element signature="e#11649#12511#0" />
+            <element signature="e#12525#14157#0" />
+            <element signature="e#14166#14371#0" />
+            <element signature="e#14380#18467#0" />
+          </folding>
         </state>
       </provider>
     </entry>
