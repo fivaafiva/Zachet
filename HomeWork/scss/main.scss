@@ -528,6 +528,9 @@ header {
 #score {
   background-image: linear-gradient(to right, #211b19, #4e3427);
   padding: 30px;
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
   .score-wrap {
     justify-content: center;
     .score-unit {
@@ -575,9 +578,43 @@ header {
     .recent-post-preview-wrap {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       width: 100%;
+      @include media-breakpoint-down(lg) {
+        justify-content: space-evenly;
+        .recent-post-unit:nth-child(n+3) {
+          margin-top: 30px;
+        }
+      }
+      @include media-breakpoint-down(md) {
+        justify-content: center;
+        .recent-post-unit:nth-child(n+2) {
+          margin-top: 15px;
+        }
+      }
       .recent-post-unit {
         width: 370px;
+        border: 1px solid #0000000f;
+        &:hover {
+          background-color: #362f2d;
+          .recent-post-unit-desc h3 {
+            color: $beige-color;
+          }
+          .recent-post-unit-desc p {
+            color: $light-color;
+          }
+          .recent-post-unit-photo-wrap img {
+            filter: brightness(40%);
+          }
+          .recent-post-unit-photo-wrap span:first-child {
+            background: #c7b299;
+            border-color: #c7b299;
+          }
+          .recent-post-unit-photo-wrap span:last-child {
+            background: #a48d72;
+            border-color: #a48d72;
+          }
+        }
         .recent-post-unit-photo-wrap {
           position: relative;
           time {
@@ -616,6 +653,21 @@ header {
           }
           p {
             @include font-montserrat(400, 14px, $light-color-txt);
+          }
+          a {
+            text-transform: capitalize;
+            @include font-montserrat(400, 14px, $beige-color);
+            display: block;
+            position: relative;
+            @include hover();
+            &:after {
+              content: '';
+              position: absolute;
+              top: 4.5px;
+              left: 89px;
+              border: 5.5px solid transparent;
+              border-left: 9px solid #c7b299e0;
+            }
           }
         }
       }

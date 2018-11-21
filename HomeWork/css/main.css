@@ -581,6 +581,9 @@ header {
 #score {
   background-image: linear-gradient(to right, #211b19, #4e3427);
   padding: 30px; }
+  @media (max-width: 991.98px) {
+    #score {
+      padding: 0; } }
   #score .score-wrap {
     justify-content: center; }
     #score .score-wrap .score-unit {
@@ -625,9 +628,35 @@ header {
   #recent-post .recent-post-wrap .recent-post-preview-wrap {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%; }
+    @media (max-width: 1199.98px) {
+      #recent-post .recent-post-wrap .recent-post-preview-wrap {
+        justify-content: space-evenly; }
+        #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit:nth-child(n+3) {
+          margin-top: 30px; } }
+    @media (max-width: 991.98px) {
+      #recent-post .recent-post-wrap .recent-post-preview-wrap {
+        justify-content: center; }
+        #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit:nth-child(n+2) {
+          margin-top: 15px; } }
     #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit {
-      width: 370px; }
+      width: 370px;
+      border: 1px solid #0000000f; }
+      #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit:hover {
+        background-color: #362f2d; }
+        #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit:hover .recent-post-unit-desc h3 {
+          color: #c7b299; }
+        #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit:hover .recent-post-unit-desc p {
+          color: #fff; }
+        #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit:hover .recent-post-unit-photo-wrap img {
+          filter: brightness(40%); }
+        #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit:hover .recent-post-unit-photo-wrap span:first-child {
+          background: #c7b299;
+          border-color: #c7b299; }
+        #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit:hover .recent-post-unit-photo-wrap span:last-child {
+          background: #a48d72;
+          border-color: #a48d72; }
       #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit .recent-post-unit-photo-wrap {
         position: relative; }
         #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit .recent-post-unit-photo-wrap time {
@@ -672,6 +701,24 @@ header {
           font-weight: 400;
           font-size: 14px;
           color: #8c8c8c; }
+        #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit .recent-post-unit-desc a {
+          text-transform: capitalize;
+          font-family: 'montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          color: #c7b299;
+          display: block;
+          position: relative; }
+          #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit .recent-post-unit-desc a:hover {
+            text-decoration: none;
+            color: #c7b299; }
+          #recent-post .recent-post-wrap .recent-post-preview-wrap .recent-post-unit .recent-post-unit-desc a:after {
+            content: '';
+            position: absolute;
+            top: 4.5px;
+            left: 89px;
+            border: 5.5px solid transparent;
+            border-left: 9px solid #c7b299e0; }
 
 #brands {
   background: #3e403f url("../img/mountain.jpg") no-repeat center center;
