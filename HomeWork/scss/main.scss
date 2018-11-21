@@ -429,6 +429,9 @@ header {
     width: 100%;
     object-fit: cover;
     object-position: center center;
+    @include media-breakpoint-down(sm) {
+      height: 200px;
+    }
   }
   .video-play-btn {
     position: absolute;
@@ -442,6 +445,9 @@ header {
     box-sizing: content-box;
     border-radius: 50%;
     fill: #fff;
+    @include media-breakpoint-down(sm) {
+      bottom: 0;
+    }
   }
   .video-play-btn--hide {
     display: none;
@@ -456,6 +462,9 @@ header {
     right: 0;
     top: 140px;
     bottom: 0;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
     .video-pres-desc-title {
       @include font-raleway(500, 30px, $light-color);
     }
@@ -470,11 +479,29 @@ header {
 #mobile-pres {
   padding-top: 80px;
   background: $gray-color;
+  @include media-breakpoint-down(sm) {
+    padding-top: 10px;
+  }
   .mobile-pres-wrap {
     justify-content: space-around;
     align-items: center;
+    @include media-breakpoint-down(lg) {
+      justify-content: center;
+      flex-direction: column;
+    }
+    .mobile-pres-photo {
+      @include media-breakpoint-down(md) {
+        width: 340px;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 250px;
+      }
+    }
     .mobile-pres-desc-wrap {
       width: 710px;
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+      }
       .mobile-pres-desc-list {
         list-style: none;
         @include font-montserrat(400, 16px, $light-color-txt);
