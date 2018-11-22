@@ -286,6 +286,7 @@ header {
   padding: 40px 0;
   .buy-wp-wrap {
     justify-content: space-between;
+    overflow: hidden;
     @include media-breakpoint-down(sm) {
       flex-direction: column;
       align-items: center;
@@ -337,9 +338,6 @@ header {
   }
   .our-project-preview-wrap {
     justify-content: space-between;
-    &:nth-child(n+4) {
-      margin-top: 30px;
-    }
     @include media-breakpoint-down(lg) {
       justify-content: space-evenly;
       .our-project-preview-unit:nth-child(n+3) {
@@ -356,10 +354,16 @@ header {
       position: relative;
       height: 337px;
       width: 370px;
+      @media (max-width: 370px) {
+        width: 100%;
+      }
       background-color: $gray-color;
       background-clip: content-box;
       outline: none;
       cursor: pointer;
+      &:nth-child(n+4) {
+        margin-top: 30px;
+      }
       &:hover {
         background-color: #362f2d;
       }
@@ -419,6 +423,11 @@ header {
         }
       }
     }
+  }
+  .our-project-preview-btn {
+    justify-content: center;
+    margin-top: 30px;
+    overflow: hidden;
   }
 }
 #video-pres {
@@ -672,25 +681,42 @@ header {
         }
       }
     }
+    .footer-recent-post-btn-wrap {
+      margin-top: 15px;
+      button {
+        background: transparent;
+        border: none;
+        outline: none;
+        fill: #d1d1d1;
+        &:hover {
+          fill: $beige-color;
+        }
+      }
+    }
   }
 }
 #brands {
 background: #3e403f url("../img/mountain.jpg") no-repeat center center;
   background-size: cover;
   .brands-wrap {
-    padding: 138px 0;
-    justify-content: space-between;
+    padding: 120px 0;
+    justify-content: space-evenly;
     align-items: center;
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
+    img {
+      margin: 15px;
+    }
   }
 }
-
 footer {
   .main-footer {
     background: $main-foot-color;
     .main-footer-wrap {
       @include font-montserrat(400, 14px, $light-foot-color);
       .footer-title {
-        @include font-raleway (400, 24px, $light-color);
+        @include font-raleway (700, 24px, $light-color);
         text-transform: capitalize;
         margin-bottom: 30px;
       }
@@ -703,6 +729,9 @@ footer {
           align-content: center;
           margin-top: -20px;
           margin-bottom: 30px;
+          @include media-breakpoint-down(sm) {
+            margin-top: 0;
+          }
           &:hover {
             text-decoration: none;
           }
@@ -789,6 +818,7 @@ footer {
         display: flex;
         flex-flow: wrap column;
         .footer-widget-wrap {
+          width: 255px;
           display: flex;
           flex-flow: wrap;
           img {
@@ -805,6 +835,10 @@ footer {
     @include font-montserrat(400, 13px, $light-foot-color);
     .under-footer-wrap {
       justify-content: space-between;
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+        align-items: center;
+      }
       .under-footer-left-side {
         list-style: none;
         padding-left: 0;
@@ -836,6 +870,9 @@ footer {
         list-style: none;
         padding-left: 0;
         margin-bottom: 0;
+        @include media-breakpoint-down(md) {
+          margin-top: 10px;
+        }
         li{
           display: inline-block;
           a{
